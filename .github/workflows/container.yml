@@ -1,5 +1,8 @@
 name: Docker Container
 on: push
+env:
+  SERVER_IP: ${{ secrets.SERVER_IP }}
+  SERVER_PWD: ${{ secrets.SERVER_PWD }}
 jobs:
   build-container:
     name: Build container

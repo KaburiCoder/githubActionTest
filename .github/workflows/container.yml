@@ -21,3 +21,6 @@ jobs:
           context: .
           push: true
           tags: kaburi/nodeapp:latest, kaburi/nodeapp:${{ github.run_number }}
+        env:
+          SERVER_IP: ${{ secrets.SERVER_IP }}
+          SERVER_PWD: ${{ secrets.SERVER_PWD }}

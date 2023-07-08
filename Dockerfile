@@ -13,6 +13,11 @@ RUN npm install
 # Copy your application files
 COPY . .
 
+ARG SERVER_IP
+ARG SERVER_PWD
+RUN echo "SERVER_IP=${SERVER_IP}" > .env
+RUN echo "SERVER_PWD=${SERVER_PWD}" >> .env
+
 # Expose application port
 EXPOSE ${port}
 

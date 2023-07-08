@@ -7,11 +7,9 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v3
-    - name: hello world 출력!!
-      run: echo Hello, world!
-    - name: 디렉토리 출력!!
+    - name: 1. 파일 목록 출력
       run: ls -al
-    - name: 파이썬 버전 출력
-      run: python -V
+    - name: 2. 파이썬 패키지 확인
+      run: pip list
     - name: 파이썬 실행
       run: python test.py

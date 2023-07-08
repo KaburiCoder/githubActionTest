@@ -2,7 +2,7 @@ name: test
 
 on: push
 jobs:
-  build-node14:
+  build-node:
     first-job:
       runs-on: ubuntu-latest
       container: node:14

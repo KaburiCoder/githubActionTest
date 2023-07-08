@@ -1,0 +1,14 @@
+{
+  "name": "githubactiontest",
+  "version": "1.0.0",
+  "description": "깃허브 액션 테스트용",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "moment": "^2.29.4"
+  }
+}

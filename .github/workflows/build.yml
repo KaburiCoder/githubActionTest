@@ -2,9 +2,14 @@ name: test
 
 on: push
 jobs:
-  first-job:
-    runs-on: ubuntu-latest
-    container: node:17.6.0
-    steps:
-      - run: node --version
-      - run: npm --version
+  build-node14:
+    first-job:
+      runs-on: ubuntu-latest
+      container: node:14
+      steps:
+        - run: node --version
+        - run: npm --version
+        - run: actions/checkout@v3
+        - run: npm install
+        - run: node app.js
+      

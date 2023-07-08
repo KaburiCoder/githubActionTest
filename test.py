@@ -6,6 +6,8 @@ response = requests.get(url)
 response.encoding = 'utf-8'
 html = response.text
 
+print('url : ${url}')
+print('html : ${html}')
 soup = BeautifulSoup(html, 'html.parser')
 
 bookservices = soup.select('.title_text')

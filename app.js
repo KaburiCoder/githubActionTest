@@ -1,6 +1,11 @@
-console.log('Hello!');
+const express = require('express');
+const app = express();
+const port = process.env.PORT || 3000;
 
-var moment = require('moment')
-var date = moment().format('LL');
+app.get('/', (req, res) => {
+  res.send('Hello World!');
+});
 
-console.log(date);
+app.listen(port, () => {
+  console.log(`App listening at port ${port}`);
+});

@@ -4,11 +4,12 @@
   "description": "깃허브 액션 테스트용",
   "main": "app.js",
   "scripts": {
+    "start" : "node app.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "moment": "^2.29.4"
+    "express": "^4.18.2"
   }
 }
